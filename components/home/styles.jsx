@@ -5,15 +5,14 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         alignItems: "center",
         justifyContent: "center",
-        width: "80%",
-        margin: "auto",
+        marginVertical: 50,
+        marginHorizontal: 30,
         height: "70%",
-        borderRadius: 20,
-        
+        borderRadius: 20
     },
     principal: {
         flex: 1,
-        backgroundColor: "#cb1bf7"
+        backgroundColor: "#da5afa"
     },
     title: {
         fontSize: 30,

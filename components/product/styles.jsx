@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
         marginVertical: 50,
         marginHorizontal: 30,
         height: "70%",
-        borderRadius: 20,
+        borderRadius: 20
     },
     principal: {
-        flex: 1
+        flex: 1,
+        backgroundColor: "brown"
     },
     title: {
         fontSize: 30,
@@ -56,9 +57,32 @@ const styles = StyleSheet.create({
     },
     product_card: {
         width: "90%",
-        height: "90%",
-        backgroundColor: "red"
+        height: "90%"
+    },
+    imagem_estilizada: {
+        width: "100%",
+        height: "50%"
+    },
+    preco_lanche: {
+        color: "brown",
+        fontSize: 30,
+        fontWeight: "500",
+        marginLeft: "auto",
+        marginTop: 15
+    },
+    descricao: {
+        fontSize: 14,
+        color: "gray",
+        marginVertical: 15
+    },
+    title_produto: {
+        color: "brown",
+        fontSize: 30,
+        fontWeight: "bold",
+        marginBottom: 20,
+        textAlign: "center"
     }
+
 
 })
 
