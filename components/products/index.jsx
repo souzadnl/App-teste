@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { View, Text, TextInput, Pressable, Image, FlatList } from "react-native";
+import { View, Text, TextInput, Pressable, Image, FlatList, ScrollView } from "react-native";
 import styles from "./styles";
 
 export default function Products({navigation}) {
@@ -69,7 +69,8 @@ export default function Products({navigation}) {
                         descricao: item.descricao
                     })}>
                         <Image source={{uri:item.foto}} style={{width:90, height:90}}></Image>
-                        <Text>Lanche: {item.nome} Valor: {item.valor}</Text>
+                        <Text>{item.nome}</Text>
+                        <Text>{item.preco}</Text>
                     </Pressable>  
                 </View>
                 

@@ -2,28 +2,29 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "purple",
+        backgroundColor: "white",
         alignItems: "center",
         justifyContent: "center",
-        marginVertical: 30,
+        marginVertical: 50,
         marginHorizontal: 30,
-        height: "90%",
-        borderRadius: 20,
+        height: "85%",
+        maxHeight: 500,
+        borderRadius: 20 
     },
     principal: {
-        flex: 1
+        flex: 1,
+        backgroundColor: "#f0f0f0"
     },
     title: {
         fontSize: 30,
         fontWeight: "bold",
         marginBottom: 20,
-        textAlign: "center",
-        color: "white"
+        textAlign: "center"
     },
     subtitle: {
         fontSize: 14,
         marginBottom: 30,
-        color: "white",
+        color: "#888",
         textAlign: "center",
         paddingHorizontal: 50
         
@@ -53,14 +54,7 @@ const styles = StyleSheet.create({
         fontSize: 14
     },
     view_inputs: {
-        width: "80%",
-    },
-    product_card: {
-        padding: 5,
-        width: "45%",
-        backgroundColor: "white",
-        borderRadius: 5,
-        margin: 5
+        width: "80%"
     }
 
 })

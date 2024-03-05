@@ -1,19 +1,29 @@
+
 import React, {useState} from "react";
 import { View, Text, TextInput, Pressable } from "react-native";
 import styles from "./styles";
-
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import app from "../firebaseConfig";
 
 export default function Login({navigation}) {
-
+    
     const [user, setUser] = useState('')
     const [pass, setPass] = useState('')
+    const auth = getAuth(app);
 
     function logar() {
-        if (user=="lin" && pass=="123") {
+        signInWithEmailAndPassword(auth, user, pass)
+            .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
             navigation.navigate("Home")
-        } else {
-            console.log("não logou")
-        }
+            // ...
+        })
+        .catch((error) => {
+            navigation.navigate("Register")
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
     }
 
     return(
